@@ -1,0 +1,338 @@
+Feature,Importance
+num__total_sqft,0.6403224455824064
+num__price_per_sqft,0.3357387332476019
+cat__location_Dodsworth Layout,0.016075986442703596
+cat__availability_Ready To Move,0.0029062161152942027
+cat__availability_18-Jul,0.0009514392248224775
+num__balcony,0.0008373186372362545
+num__bath,0.00068843061219596
+num__size,0.0005164956779288386
+cat__area_type_Plot  Area,0.0003343861149408052
+cat__location_Ulsoor,0.0002530418925539206
+cat__availability_18-May,0.00024385254822456413
+cat__availability_18-Mar,0.00017428588119084345
+cat__location_Rajaji Nagar,0.00015541353830498647
+cat__availability_19-Jan,0.00012885203301480288
+cat__area_type_Super built-up  Area,0.00010117906438006588
+cat__location_Kasavanhalli,7.172058409755625e-05
+cat__location_Sarjapur  Road,6.305493698689906e-05
+cat__availability_18-Apr,6.186350217959514e-05
+cat__location_Other,5.0934723477361845e-05
+cat__area_type_Built-up  Area,4.842178881385496e-05
+cat__location_Malleshwaram,2.575635091801605e-05
+cat__availability_18-Jan,2.225794500660267e-05
+cat__location_Whitefield,2.1178659161436066e-05
+cat__location_Ramagondanahalli,2.0476359841234384e-05
+cat__location_Vishveshwarya Layout,1.559551411276654e-05
+cat__location_Tindlu,1.428394776783757e-05
+cat__location_Old Airport Road,1.4242688874773785e-05
+cat__location_Kothanur,1.358076797857789e-05
+cat__location_Indira Nagar,7.2939572914113465e-06
+cat__location_Gunjur,5.9894087220543345e-06
+cat__location_Mahalakshmi Layout,5.787186661162144e-06
+cat__location_Banaswadi,5.638610799286869e-06
+cat__location_Hebbal,4.848265385917735e-06
+cat__availability_19-Dec,4.708268340992595e-06
+cat__location_Ambedkar Nagar,4.053318262035811e-06
+cat__location_Sultan Palaya,4.000936033412596e-06
+cat__location_Koramangala,3.6417510114168214e-06
+cat__location_Iblur Village,3.1951974042579103e-06
+cat__location_Frazer Town,3.187454337586541e-06
+cat__location_Yelahanka New Town,3.1417938594977737e-06
+cat__location_Begur,2.978490635848172e-06
+cat__location_Hennur Road,2.829908546953319e-06
+cat__availability_19-Jul,2.8099125564169035e-06
+cat__location_Banashankari Stage VI,2.800307758536911e-06
+cat__location_Giri Nagar,2.7841740490887675e-06
+cat__location_Kengeri,2.680643636865739e-06
+cat__location_Dodda Nekkundi,2.6072100085772014e-06
+cat__location_Judicial Layout,2.098252968501457e-06
+cat__location_Devanahalli,2.0177211842329107e-06
+cat__location_JP Nagar,2.0172160396058443e-06
+cat__location_9th Phase JP Nagar,1.6770165273281536e-06
+cat__location_Yelahanka,1.6620370510525232e-06
+cat__location_Benson Town,1.660991992020329e-06
+cat__location_1st Block Jayanagar,1.5894426643929055e-06
+cat__location_KR Puram,1.3949530510308253e-06
+cat__location_R.T. Nagar,1.306391067690077e-06
+cat__location_Electronic City Phase II,1.3001286678991223e-06
+cat__location_Channasandra,1.232134361236703e-06
+cat__availability_19-Mar,1.1964616130754449e-06
+cat__location_Hebbal Kempapura,1.1091870529857627e-06
+cat__location_Bannerghatta Road,1.0882972216071215e-06
+cat__availability_17-Jul,9.937466663881387e-07
+cat__location_Sarjapur,9.815008489740095e-07
+cat__availability_18-Feb,9.339984888136313e-07
+cat__location_Cooke Town,8.78009276889975e-07
+cat__location_Banashankari Stage II,8.653814210896481e-07
+cat__location_Dairy Circle,8.631155275472463e-07
+cat__location_Thanisandra,8.284142558949226e-07
+cat__location_Basavangudi,8.158556990365195e-07
+cat__availability_20-May,7.806501243810347e-07
+cat__location_Choodasandra,7.666957022187155e-07
+cat__location_Thigalarapalya,7.581701664095902e-07
+cat__location_Marathahalli,7.256104095774928e-07
+cat__location_Banashankari,7.151417553541253e-07
+cat__availability_20-Apr,6.686054917940764e-07
+cat__location_Ramamurthy Nagar,6.53860084825817e-07
+cat__location_Haralur Road,6.329989147594678e-07
+cat__location_Hosakerehalli,6.123552292934311e-07
+cat__location_Padmanabhanagar,6.051604516291905e-07
+cat__location_1st Phase JP Nagar,5.625039090112785e-07
+cat__location_Nagavara,5.560586909496529e-07
+cat__availability_18-Dec,5.322073958407723e-07
+cat__location_Garudachar Palya,5.316376817771091e-07
+cat__location_7th Phase JP Nagar,4.7561738373555235e-07
+cat__location_Mahadevpura,4.5091639529804513e-07
+cat__location_BTM 2nd Stage,4.446026136931281e-07
+cat__location_Nagasandra,4.340728292620975e-07
+cat__availability_17-Nov,4.0314345610068457e-07
+cat__availability_20-Dec,4.031281603863512e-07
+cat__location_Kammanahalli,4.0198875377555786e-07
+cat__location_Hormavu,3.7838005285953e-07
+cat__location_Amruthahalli,3.689483191945452e-07
+cat__location_Kadugodi,3.571552525975582e-07
+cat__location_Old Madras Road,3.5646689768746696e-07
+cat__availability_18-Aug,3.3590468839385263e-07
+cat__location_ISRO Layout,3.1940001450131884e-07
+cat__location_Hosur Road,2.9301038898420065e-07
+cat__location_Sahakara Nagar,2.870003783502398e-07
+cat__location_Kodigehalli,2.711690855712513e-07
+cat__location_5th Phase JP Nagar,2.611973551513041e-07
+cat__location_Singasandra,2.5541449173367497e-07
+cat__location_Chandapura,2.550085027798627e-07
+cat__location_Tumkur Road,2.549698498233018e-07
+cat__location_Kadubeesanahalli,2.519878081175268e-07
+cat__location_Brookefield,2.4785361646686426e-07
+cat__location_Ambalipura,2.476943272173445e-07
+cat__location_Domlur,2.455754998314543e-07
+cat__location_Bellandur,2.4489173706558594e-07
+cat__availability_Immediate Possession,2.263756447942802e-07
+cat__location_Hegde Nagar,2.22488691959685e-07
+cat__location_HBR Layout,2.1464862979462991e-07
+cat__location_Varthur,2.0265393260565693e-07
+cat__location_Kanakpura Road,1.8801531971555482e-07
+cat__location_ITPL,1.8575220679390573e-07
+cat__location_Jakkur,1.795683749872633e-07
+cat__location_Thyagaraja Nagar,1.7926448373783313e-07
+cat__location_Billekahalli,1.7684846938031978e-07
+cat__availability_18-Jun,1.6650172107598638e-07
+cat__location_Hoskote,1.6361699720888843e-07
+cat__location_Sarakki Nagar,1.5789516864415953e-07
+cat__location_Chamrajpet,1.5119476346744713e-07
+cat__location_Jigani,1.4622399537940893e-07
+cat__location_Kumaraswami Layout,1.4303839273278504e-07
+cat__location_Cunningham Road,1.4003610405853392e-07
+cat__location_OMBR Layout,1.2797600368835707e-07
+cat__location_Shampura,1.1741993250049847e-07
+cat__location_Banashankari Stage III,1.166511039762352e-07
+cat__location_2nd Stage Nagarbhavi,1.1454421393278981e-07
+cat__location_CV Raman Nagar,1.1103650506215076e-07
+cat__location_Bommasandra,1.1037443571949429e-07
+cat__location_Sector 7 HSR Layout,1.0996680095142577e-07
+cat__location_Sanjay nagar,1.0886282517734279e-07
+cat__area_type_Carpet  Area,1.0727866050371415e-07
+cat__location_8th Phase JP Nagar,1.0614771784611712e-07
+cat__location_Vijayanagar,1.0547323063408186e-07
+cat__location_Harlur,1.0261098143514118e-07
+cat__location_BTM 1st Stage,1.002774074674389e-07
+cat__location_Hulimavu,9.860812203438191e-08
+cat__location_Basaveshwara Nagar,9.749741432829655e-08
+cat__location_Chikka Tirupathi,9.547650366094301e-08
+cat__location_Electronic City,8.542288946560973e-08
+cat__location_Hosa Road,8.240120813620443e-08
+cat__location_Kodigehaali,8.20403498291778e-08
+cat__availability_17-May,8.075446071619637e-08
+cat__location_Vidyaranyapura,8.032703447802927e-08
+cat__location_Magadi Road,7.609233280071763e-08
+cat__location_Yeshwanthpur,7.59666640726848e-08
+cat__location_Begur Road,7.42389316324606e-08
+cat__location_Kodichikkanahalli,7.417118910153804e-08
+cat__location_Ardendale,7.301751113837334e-08
+cat__location_Vishwapriya Layout,7.138674626587378e-08
+cat__location_Murugeshpalya,6.940575228802979e-08
+cat__location_Lakshminarayana Pura,6.791216478222489e-08
+cat__location_Kaggalipura,6.66881975438257e-08
+cat__location_Shivaji Nagar,6.333495030925661e-08
+cat__location_Rachenahalli,6.121794605168071e-08
+cat__location_Anekal,5.771702039989676e-08
+cat__location_Cox Town,5.5255808275381496e-08
+cat__location_Attibele,5.220603971610907e-08
+cat__location_TC Palaya,5.196568571148255e-08
+cat__location_Kasturi Nagar,4.992920600318664e-08
+cat__location_Mysore Road,4.873049200986418e-08
+cat__location_Binny Pete,4.850875795682183e-08
+cat__location_Doddaballapur,4.785052558170639e-08
+cat__location_Hoodi,4.74499763371041e-08
+cat__location_Kudlu Gate,4.668454055864434e-08
+cat__location_Raja Rajeshwari Nagar,4.625975389906823e-08
+cat__availability_22-May,4.376886239766241e-08
+cat__location_Akshaya Nagar,4.205842542427543e-08
+cat__location_Electronics City Phase 1,3.8376932638301455e-08
+cat__location_Nehru Nagar,3.830118009901286e-08
+cat__location_Uttarahalli,3.806164161954656e-08
+cat__location_Gubbalala,3.7649617671977386e-08
+cat__location_HSR Layout,3.6259902897187386e-08
+cat__location_Kalyan nagar,3.5949882052047895e-08
+cat__location_Talaghattapura,3.5588986092888674e-08
+cat__location_Gottigere,3.5582080991276206e-08
+cat__location_Kaval Byrasandra,3.4494599782445004e-08
+cat__location_Margondanahalli,3.432583137397228e-08
+cat__location_Neeladri Nagar,3.384858969575549e-08
+cat__location_Nagarbhavi,3.381816750722479e-08
+cat__location_Karuna Nagar,3.3736835292632145e-08
+cat__location_Kaggadasapura,3.283335792715709e-08
+cat__location_Battarahalli,2.835776471967533e-08
+cat__location_Horamavu Agara,2.781695813091972e-08
+cat__location_Dasanapura,2.6728213902752156e-08
+cat__location_Bommasandra Industrial Area,2.658924856703673e-08
+cat__location_Nagavarapalya,2.5510851983040844e-08
+cat__availability_21-Jul,2.5421959916318222e-08
+cat__location_Prithvi Layout,2.4340977574604356e-08
+cat__availability_21-Dec,2.369186649209444e-08
+cat__availability_19-Jun,2.357953348018113e-08
+cat__location_6th Phase JP Nagar,2.3187548114054836e-08
+cat__location_HRBR Layout,2.2244524908001964e-08
+cat__availability_17-Jun,2.209512443585812e-08
+cat__location_Kundalahalli,2.151214464658314e-08
+cat__location_Kenchenahalli,2.0859496350916583e-08
+cat__location_Mico Layout,2.0592289551135423e-08
+cat__availability_17-Aug,2.0225963112525498e-08
+cat__location_Nagappa Reddy Layout,1.962273021941267e-08
+cat__location_Kodihalli,1.9561785844701388e-08
+cat__location_Bommanahalli,1.9284112036232015e-08
+cat__location_Dommasandra,1.8530272815179448e-08
+cat__location_Green Glen Layout,1.638906396179436e-08
+cat__location_Pai Layout,1.580494225535866e-08
+cat__availability_18-Nov,1.4704577060547236e-08
+cat__location_Rajiv Nagar,1.403444995167476e-08
+cat__location_Jalahalli,1.3509346773387676e-08
+cat__location_Chikkabanavar,1.3456830177416856e-08
+cat__location_Subramanyapura,1.3223214903285768e-08
+cat__availability_16-Mar,1.2760135239063518e-08
+cat__location_Anjanapura,1.2726639544439487e-08
+cat__location_Konanakunte,1.2705885413604684e-08
+cat__location_Bannerghatta,1.2574809493846857e-08
+cat__location_Sector 2 HSR Layout,1.0711858188835032e-08
+cat__location_Kammasandra,1.0613820301906854e-08
+cat__availability_21-Jun,1.0347059678164572e-08
+cat__location_Somasundara Palya,9.571879710070323e-09
+cat__location_Yelachenahalli,9.533825613395932e-09
+cat__location_Arekere,9.530913444747632e-09
+cat__location_Rayasandra,9.335547811218198e-09
+cat__location_NRI Layout,8.964558649094497e-09
+cat__location_Ganga Nagar,8.81152736833788e-09
+cat__location_Jalahalli East,8.433001375657662e-09
+cat__availability_16-Jul,7.397458304289416e-09
+cat__availability_19-Aug,7.380545564871186e-09
+cat__availability_21-Aug,7.3142011583705895e-09
+cat__location_Budigere,6.81313923954814e-09
+cat__location_EPIP Zone,6.534015328358141e-09
+cat__location_Laggere,6.459020416634858e-09
+cat__location_Sarjapura - Attibele Road,5.315743139316565e-09
+cat__availability_19-May,5.256766130265444e-09
+cat__availability_19-Oct,4.672700867383601e-09
+cat__location_Kanakapura,4.583611039221596e-09
+cat__location_Kalena Agrahara,4.1923396033513226e-09
+cat__availability_20-Sep,3.926557923695951e-09
+cat__availability_20-Jan,3.810244050720202e-09
+cat__location_Badavala Nagar,3.4368477505212266e-09
+cat__location_Lingadheeranahalli,3.2142607138584713e-09
+cat__location_Bhoganhalli,3.2109305533037953e-09
+cat__location_Bharathi Nagar,3.1386218261352105e-09
+cat__location_Doddathoguru,2.7619110097918005e-09
+cat__location_Bisuvanahalli,2.5673651010488854e-09
+cat__availability_21-May,2.3361208890059287e-09
+cat__location_Chikkalasandra,2.318572829890726e-09
+cat__location_Balagere,2.2228821986909606e-09
+cat__availability_18-Sep,2.088284023155189e-09
+cat__availability_18-Oct,2.0189152920826962e-09
+cat__availability_19-Apr,1.930661082224922e-09
+cat__location_Kothannur,1.7155721726243002e-09
+cat__location_Marsur,1.6780506516658648e-09
+cat__availability_20-Jul,1.6755174102151034e-09
+cat__location_Kannamangala,1.4838171716626142e-09
+cat__location_Horamavu Banaswadi,1.0579292085468226e-09
+cat__location_Vasanthapura,9.60055503184515e-10
+cat__location_Pattandur Agrahara,9.334144550398991e-10
+cat__location_Naganathapura,8.155536191688036e-10
+cat__location_Gollarapalya Hosahalli,7.380791150313669e-10
+cat__location_Ananth Nagar,7.239599203044547e-10
+cat__availability_20-Aug,6.90862063729652e-10
+cat__location_Kathriguppe,5.383013863222304e-10
+cat__location_GM Palaya,7.329969826846725e-11
+cat__availability_19-Sep,1.6003076065251107e-11
+cat__availability_16-Dec,0.0
+cat__availability_15-Oct,0.0
+cat__availability_15-Jun,0.0
+cat__location_BTM Layout,0.0
+cat__location_Banjara Layout,0.0
+cat__location_Banashankari Stage V,0.0
+cat__location_Anandapura,0.0
+cat__location_Abbigere,0.0
+cat__availability_15-Nov,0.0
+cat__location_Varthur Road,0.0
+cat__location_Gunjur Palya,0.0
+cat__location_Hennur,0.0
+cat__location_Doddakallasandra,0.0
+cat__location_5th Block Hbr Layout,0.0
+cat__availability_22-Mar,0.0
+cat__availability_22-Nov,0.0
+cat__location_ Devarachikkanahalli,0.0
+cat__location_2nd Phase Judicial Layout,0.0
+cat__location_Bommenahalli,0.0
+cat__location_BEML Layout,0.0
+cat__availability_22-Jun,0.0
+cat__location_Dasarahalli,0.0
+cat__location_AECS Layout,0.0
+cat__location_Basapura,0.0
+cat__availability_14-Jul,0.0
+cat__availability_14-Nov,0.0
+cat__availability_15-Dec,0.0
+cat__location_Babusapalaya,0.0
+cat__location_Yelenahalli,0.0
+cat__location_Vittasandra,0.0
+cat__availability_22-Jan,0.0
+cat__availability_21-Mar,0.0
+cat__availability_21-Feb,0.0
+cat__availability_21-Jan,0.0
+cat__availability_20-Oct,0.0
+cat__availability_20-Nov,0.0
+cat__availability_21-Sep,0.0
+cat__availability_22-Dec,0.0
+cat__availability_21-Nov,0.0
+cat__location_Kaikondrahalli,0.0
+cat__location_Kalkere,0.0
+cat__location_Kambipura,0.0
+cat__location_Malleshpalya,0.0
+cat__location_Mallasandra,0.0
+cat__location_LB Shastri Nagar,0.0
+cat__location_Kudlu,0.0
+cat__availability_20-Mar,0.0
+cat__availability_20-Jun,0.0
+cat__availability_19-Nov,0.0
+cat__availability_20-Feb,0.0
+cat__location_Kogilu,0.0
+cat__location_Kereguddadahalli,0.0
+cat__location_Kengeri Satellite Town,0.0
+cat__availability_21-Oct,0.0
+cat__availability_19-Feb,0.0
+cat__location_Munnekollal,0.0
+cat__location_NGR Layout,0.0
+cat__location_Nagadevanahalli,0.0
+cat__location_Poorna Pragna Layout,0.0
+cat__location_Parappana Agrahara,0.0
+cat__location_Panathur,0.0
+cat__location_Narayanapura,0.0
+cat__availability_16-Oct,0.0
+cat__availability_17-Dec,0.0
+cat__availability_16-Sep,0.0
+cat__availability_17-Apr,0.0
+cat__availability_17-Feb,0.0
+cat__availability_17-Mar,0.0
+cat__availability_17-Oct,0.0
+cat__availability_17-Sep,0.0
+cat__location_Seegehalli,0.0
+cat__location_Sonnenahalli,0.0
+cat__location_Sompura,0.0
+cat__location_Thubarahalli,0.0
