@@ -15,7 +15,7 @@ st.set_page_config(
 # ---------------- LOAD DATA ----------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("house_data.csv")   # <-- your dataset
+    df = pd.read_csv("Bengaluru_House_Data.csv")   # <-- your dataset
     return df
 
 df = load_data()
@@ -105,6 +105,7 @@ elif menu == "Prediction":
         prediction = model.predict(input_scaled)[0]
 
         st.success(f"🏷️ Estimated House Price: ₹ {prediction:,.2f}")
+
 
 
 
