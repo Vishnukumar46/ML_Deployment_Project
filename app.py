@@ -69,7 +69,7 @@ elif menu == "EDA":
     sns.histplot(df["price"], kde=True, ax=ax)
     st.pyplot(fig)
 
-    # FIXED Sqft vs Price
+    # Sqft vs Price
     st.write("### 📐 Total Sqft vs Price")
     sqft_price_df = df.dropna(subset=["total_sqft_num", "price"])
 
@@ -83,18 +83,37 @@ elif menu == "EDA":
     ax.set_ylabel("Price")
     st.pyplot(fig)
 
-    # BHK vs Price
+    # BHK vs Price (FIXED)
     st.write("### 🏘️ BHK vs Price")
+    bhk_price_df = df.dropna(subset=["bhk", "price"])
+
     fig, ax = plt.subplots()
-    sns.boxplot(x=df["bhk"], y=df["price"], ax=ax)
+    sns.boxplot(
+        x=bhk_price_df["bhk"],
+        y=bhk_price_df["price"],
+        ax=ax
+    )
+    ax.set_xlabel("BHK")
+    ax.set_ylabel("Price")
     st.pyplot(fig)
 
     # Correlation Heatmap
     st.write("### 🔥 Correlation Heatmap")
-    numeric_df = df.select_dtypes(include=np.number)
+
+    numeric_df = df[[
+        "price",
+        "total_sqft_num",
+        "bath",
+        "bhk"
+    ]].dropna()
 
     fig, ax = plt.subplots(figsize=(6, 4))
-    sns.heatmap(numeric_df.corr(), annot=True, cmap="coolwarm", ax=ax)
+    sns.heatmap(
+        numeric_df.corr(),
+        annot=True,
+        cmap="coolwarm",
+        ax=ax
+    )
     st.pyplot(fig)
 
 # ---------------- MODEL METRICS ----------------
@@ -119,3 +138,4 @@ elif menu == "Prediction":
     if st.button("Predict Price"):
         estimated_price = sqft * 5000 + bath * 200000 + bhk * 300000
         st.success(f"🏷️ Estimated House Price: ₹ {estimated_price:,.2f}")
+
