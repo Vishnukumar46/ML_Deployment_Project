@@ -19,7 +19,19 @@ def load_data():
 
 df = load_data()
 
-# ---------------- SIDEBAR NAVIGATION ----------------
+# ---------------- DATA CLEANING FOR EDA ----------------
+def convert_sqft_to_num(x):
+    try:
+        if "-" in str(x):
+            a, b = x.split("-")
+            return (float(a) + float(b)) / 2
+        return float(x)
+    except:
+        return np.nan
+
+df["total_sqft_num"] = df["total_sqft"].apply(convert_sqft_to_num)
+
+# ---------------- SIDEBAR ----------------
 menu = st.sidebar.radio(
     "Navigation",
     ["Overview", "EDA", "Model Metrics", "Prediction"]
@@ -28,28 +40,28 @@ menu = st.sidebar.radio(
 # ---------------- OVERVIEW ----------------
 if menu == "Overview":
     st.subheader("📌 Project Overview")
+
     st.write("""
     **Problem Type:** Regression  
     **Target Variable:** Price  
     **Dataset:** Bengaluru House Data  
 
-    This project demonstrates:
+    This project covers:
     - Data preprocessing  
     - Exploratory Data Analysis (EDA)  
-    - Model training & evaluation  
+    - Model evaluation  
     - Deployment using Streamlit  
     """)
+
+    st.write("### 📄 Example Dataset")
+    st.dataframe(df.sample(5))
+
+    st.write("### 📊 Statistical Summary")
+    st.dataframe(df.describe())
 
 # ---------------- EDA ----------------
 elif menu == "EDA":
     st.subheader("📊 Exploratory Data Analysis")
-
-    st.write("### Dataset Preview")
-    st.dataframe(df.head())
-
-    st.write("### Dataset Shape")
-    st.write(f"Rows: {df.shape[0]}")
-    st.write(f"Columns: {df.shape[1]}")
 
     # Price Distribution
     st.write("### 📈 Price Distribution")
@@ -57,29 +69,30 @@ elif menu == "EDA":
     sns.histplot(df["price"], kde=True, ax=ax)
     st.pyplot(fig)
 
-    # Sqft vs Price
+    # FIXED Sqft vs Price
     st.write("### 📐 Total Sqft vs Price")
+    sqft_price_df = df.dropna(subset=["total_sqft_num", "price"])
+
     fig, ax = plt.subplots()
     sns.scatterplot(
-        x=df["total_sqft"],
-        y=df["price"],
+        x=sqft_price_df["total_sqft_num"],
+        y=sqft_price_df["price"],
         ax=ax
     )
+    ax.set_xlabel("Total Sqft")
+    ax.set_ylabel("Price")
     st.pyplot(fig)
 
     # BHK vs Price
     st.write("### 🏘️ BHK vs Price")
     fig, ax = plt.subplots()
-    sns.boxplot(
-        x=df["bhk"],
-        y=df["price"],
-        ax=ax
-    )
+    sns.boxplot(x=df["bhk"], y=df["price"], ax=ax)
     st.pyplot(fig)
 
     # Correlation Heatmap
     st.write("### 🔥 Correlation Heatmap")
     numeric_df = df.select_dtypes(include=np.number)
+
     fig, ax = plt.subplots(figsize=(6, 4))
     sns.heatmap(numeric_df.corr(), annot=True, cmap="coolwarm", ax=ax)
     st.pyplot(fig)
@@ -104,6 +117,5 @@ elif menu == "Prediction":
     bhk = st.number_input("Number of BHK", value=2)
 
     if st.button("Predict Price"):
-        # Demo logic
         estimated_price = sqft * 5000 + bath * 200000 + bhk * 300000
         st.success(f"🏷️ Estimated House Price: ₹ {estimated_price:,.2f}")
