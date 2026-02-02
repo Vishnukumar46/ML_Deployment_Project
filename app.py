@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
@@ -17,10 +19,10 @@ def load_data():
 
 df = load_data()
 
-# ---------------- SIDEBAR ----------------
+# ---------------- SIDEBAR NAVIGATION ----------------
 menu = st.sidebar.radio(
     "Navigation",
-    ["Overview", "Dataset", "Prediction (Demo)", "Model Info"]
+    ["Overview", "EDA", "Model Metrics", "Prediction"]
 )
 
 # ---------------- OVERVIEW ----------------
@@ -28,44 +30,63 @@ if menu == "Overview":
     st.subheader("📌 Project Overview")
     st.write("""
     **Problem Type:** Regression  
-    **Target Variable:** House Price  
+    **Target Variable:** Price  
     **Dataset:** Bengaluru House Data  
 
-    This project demonstrates the **end-to-end ML workflow**:
-    - Data preprocessing
-    - Feature selection
-    - Model training
-    - Evaluation
-    - Deployment using Streamlit
+    This project demonstrates:
+    - Data preprocessing  
+    - Exploratory Data Analysis (EDA)  
+    - Model training & evaluation  
+    - Deployment using Streamlit  
     """)
 
-# ---------------- DATASET ----------------
-elif menu == "Dataset":
-    st.subheader("📊 Dataset Preview")
+# ---------------- EDA ----------------
+elif menu == "EDA":
+    st.subheader("📊 Exploratory Data Analysis")
+
+    st.write("### Dataset Preview")
     st.dataframe(df.head())
 
-    st.subheader("📈 Dataset Shape")
-    st.write("Rows:", df.shape[0])
-    st.write("Columns:", df.shape[1])
+    st.write("### Dataset Shape")
+    st.write(f"Rows: {df.shape[0]}")
+    st.write(f"Columns: {df.shape[1]}")
 
-# ---------------- PREDICTION (DEMO) ----------------
-elif menu == "Prediction (Demo)":
-    st.subheader("🔮 House Price Prediction (Demo Mode)")
+    # Price Distribution
+    st.write("### 📈 Price Distribution")
+    fig, ax = plt.subplots()
+    sns.histplot(df["price"], kde=True, ax=ax)
+    st.pyplot(fig)
 
-    st.info("This is a demo prediction to showcase deployment.")
+    # Sqft vs Price
+    st.write("### 📐 Total Sqft vs Price")
+    fig, ax = plt.subplots()
+    sns.scatterplot(
+        x=df["total_sqft"],
+        y=df["price"],
+        ax=ax
+    )
+    st.pyplot(fig)
 
-    sqft = st.number_input("Total Square Feet", value=1000)
-    bath = st.number_input("Number of Bathrooms", value=2)
-    bhk = st.number_input("Number of BHK", value=2)
+    # BHK vs Price
+    st.write("### 🏘️ BHK vs Price")
+    fig, ax = plt.subplots()
+    sns.boxplot(
+        x=df["bhk"],
+        y=df["price"],
+        ax=ax
+    )
+    st.pyplot(fig)
 
-    if st.button("Predict Price"):
-        # Simple mock logic (demo)
-        estimated_price = sqft * 5000 + bath * 200000 + bhk * 300000
-        st.success(f"🏷️ Estimated House Price: ₹ {estimated_price:,.2f}")
+    # Correlation Heatmap
+    st.write("### 🔥 Correlation Heatmap")
+    numeric_df = df.select_dtypes(include=np.number)
+    fig, ax = plt.subplots(figsize=(6, 4))
+    sns.heatmap(numeric_df.corr(), annot=True, cmap="coolwarm", ax=ax)
+    st.pyplot(fig)
 
-# ---------------- MODEL INFO ----------------
-elif menu == "Model Info":
-    st.subheader("🤖 Model Details")
+# ---------------- MODEL METRICS ----------------
+elif menu == "Model Metrics":
+    st.subheader("🤖 Model Performance")
 
     metrics = pd.read_csv("model_metrics.csv")
     st.table(metrics)
@@ -73,3 +94,16 @@ elif menu == "Model Info":
     st.subheader("🔍 Feature Importance")
     importance = pd.read_csv("feature_importance.csv")
     st.dataframe(importance)
+
+# ---------------- PREDICTION ----------------
+elif menu == "Prediction":
+    st.subheader("🔮 House Price Prediction")
+
+    sqft = st.number_input("Total Square Feet", value=1000)
+    bath = st.number_input("Number of Bathrooms", value=2)
+    bhk = st.number_input("Number of BHK", value=2)
+
+    if st.button("Predict Price"):
+        # Demo logic
+        estimated_price = sqft * 5000 + bath * 200000 + bhk * 300000
+        st.success(f"🏷️ Estimated House Price: ₹ {estimated_price:,.2f}")
