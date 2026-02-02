@@ -19,7 +19,7 @@ def load_data():
 
 df = load_data()
 
-# ---------------- DATA CLEANING FOR EDA ----------------
+# ---------------- SQFT CLEANING (FOR EDA) ----------------
 def convert_sqft_to_num(x):
     try:
         if "-" in str(x):
@@ -46,8 +46,8 @@ if menu == "Overview":
     **Target Variable:** Price  
     **Dataset:** Bengaluru House Data  
 
-    This project covers:
-    - Data preprocessing  
+    This project demonstrates:
+    - Data understanding  
     - Exploratory Data Analysis (EDA)  
     - Model evaluation  
     - Deployment using Streamlit  
@@ -83,28 +83,13 @@ elif menu == "EDA":
     ax.set_ylabel("Price")
     st.pyplot(fig)
 
-    # BHK vs Price (FIXED)
-    st.write("### 🏘️ BHK vs Price")
-    bhk_price_df = df.dropna(subset=["bhk", "price"])
-
-    fig, ax = plt.subplots()
-    sns.boxplot(
-        x=bhk_price_df["bhk"],
-        y=bhk_price_df["price"],
-        ax=ax
-    )
-    ax.set_xlabel("BHK")
-    ax.set_ylabel("Price")
-    st.pyplot(fig)
-
-    # Correlation Heatmap
+    # Heatmap
     st.write("### 🔥 Correlation Heatmap")
 
     numeric_df = df[[
         "price",
         "total_sqft_num",
-        "bath",
-        "bhk"
+        "bath"
     ]].dropna()
 
     fig, ax = plt.subplots(figsize=(6, 4))
@@ -133,9 +118,8 @@ elif menu == "Prediction":
 
     sqft = st.number_input("Total Square Feet", value=1000)
     bath = st.number_input("Number of Bathrooms", value=2)
-    bhk = st.number_input("Number of BHK", value=2)
 
     if st.button("Predict Price"):
-        estimated_price = sqft * 5000 + bath * 200000 + bhk * 300000
+        # Demo prediction logic
+        estimated_price = sqft * 5000 + bath * 200000
         st.success(f"🏷️ Estimated House Price: ₹ {estimated_price:,.2f}")
-
